@@ -1,0 +1,27 @@
+# Humanoid Walking Algorithm
+
+1. **Initialize**  
+   - Set all servos to 90° (neutral standing position).
+
+2. **Loop for each step**  
+   1. **Lift right leg**  
+      - Hip servo (right) → 60°  
+      - Knee servo (right) → 120°  
+   2. **Swing right leg forward**  
+      - Hip servo (right) → 90°  
+   3. **Lower right leg**  
+      - Knee servo (right) → 90°  
+   4. **Shift weight to right leg**  
+      - (Optional) small adjustment on balance servos/arms  
+   5. **Lift left leg**  
+      - Hip servo (left) → 60°  
+      - Knee servo (left) → 120°  
+   6. **Swing left leg forward**  
+      - Hip servo (left) → 90°  
+   7. **Lower left leg**  
+      - Knee servo (left) → 90°  
+   8. **Shift weight to left leg**  
+      - (Optional) small adjustment on balance servos/arms  
+
+3. **Repeat**  
+   - Continue alternating right/left steps until the robot reaches its goal.
